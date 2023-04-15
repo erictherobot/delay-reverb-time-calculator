@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 html {
-  background: linear-gradient(
-    to right,
-    rgb(244, 63, 94),
-    rgb(248, 113, 113),
-    rgb(239, 68, 68)
-  );
+  background: linear-gradient(to right, rgb(56, 189, 248), rgb(103, 232, 249));
 }
 
 body {
