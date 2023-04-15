@@ -56,7 +56,7 @@ export const ReverbAndDelayCalculator = () => {
         <input
           type="number"
           id="bpm"
-          className="max-w-lg mt-2 p-2 border border-gray-300 rounded-md"
+          className="max-w-lg mt-2 p-2 border border-black rounded-md"
           value={bpm}
           onChange={(e) => {
             setBpm(Number(e.target.value));
@@ -66,36 +66,36 @@ export const ReverbAndDelayCalculator = () => {
 
       <div className="mt-8">
         <h2 className="text-2xl font-bold mb-4">Results:</h2>
-        <table className="w-full border-collapse border border-gray-300">
+        <table className="w-full border-collapse border border-black">
           <thead>
             <tr>
-              <th className="border border-gray-300 p-2">Note</th>
-              <th className="border border-gray-300 p-2">Reverb Size (ms)</th>
-              <th className="border border-gray-300 p-2">Pre-Delay (ms)</th>
-              <th className="border border-gray-300 p-2">Decay Time (ms)</th>
-              <th className="border border-gray-300 p-2">
+              <th className="border border-black p-2">Note</th>
+              <th className="border border-black p-2">Reverb Size (ms)</th>
+              <th className="border border-black p-2">Pre-Delay (ms)</th>
+              <th className="border border-black p-2">Decay Time (ms)</th>
+              <th className="border border-black p-2">
                 Total Reverb Time (ms)
               </th>
-              <th className="border border-gray-300 p-2">Delay Time (ms)</th>
+              <th className="border border-black p-2">Delay Time (ms)</th>
             </tr>
           </thead>
           <tbody>
             {results.map((result, index) => (
               <tr key={index}>
-                <td className="border border-gray-300 p-2">{result.note}</td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-black p-2">{result.note}</td>
+                <td className="border border-black p-2">
                   {result.reverbSize.toFixed(2)}
                 </td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-black p-2">
                   {result.preDelay.toFixed(2)}
                 </td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-black p-2">
                   {result.decayTime.toFixed(2)}
                 </td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-black p-2">
                   {result.totalReverbTime.toFixed(2)}
                 </td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-black p-2">
                   {result.delayTime.toFixed(2)}
                 </td>
               </tr>
